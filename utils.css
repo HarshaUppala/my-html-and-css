@@ -1,0 +1,46 @@
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.bold{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.flex-center-justify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typicalImage{
+    width: 40rem;
+    height: auto;
+    text-align: center;
+}
+
+.typicalImage-fit{
+    width: 25rem;
+    height: auto;
+    text-align: center;
+}
+
+.redirect{
+    color: black;
+    text-decoration: none;
+}
+
+.redirectH2:hover{
+    color:rgb(238, 238, 238);
+}
+
+.rotate-right{
+    width: 1.2rem;
+    transform: rotate(90deg);
+    transition: transform 300ms ease-out;
+}
+
+.redirect:hover img{
+    transform: rotate(90deg) translateY(-50%);
+}

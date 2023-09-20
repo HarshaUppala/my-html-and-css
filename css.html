@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./utils.css">
+    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+    <title>CSS</title>
+</head>
+<body>
+    <div class="sideBar">
+        <h2>CSS</h2>
+    <a href="#providingCss" class="sideBarAnchors">Providing CSS</a>
+    <a href="#normalizingCss" class="sideBarAnchors">Normalizing CSS</a>
+    <a href="#selectors" class="sideBarAnchors">Selectors</a>
+    <a href="#specificity" class="sideBarAnchors">Specificity</a>
+    <a href="#colors" class="sideBarAnchors">Colors</a>
+    <a href="#gradient" class="sideBarAnchors">Gradients</a>
+    <a href="#layouts" id="layout" class="sideBarAnchors flex-center sideBarAnchors-list-holder">Layouts <div class="flex-center"><img id="iconDropDown" class="icon" src="./images/dropdown.svg" alt="" srcset=""></div ></a>
+    <ul id="list" class="list-prop">
+        <li><a href="#boxModel" class="sideBarAnchors sideBarAnchorsList-elements">Box Model</a></li>
+        <li><a href="#sizingElements" class="sideBarAnchors sideBarAnchorsList-elements">Sizing Elements</a></li>
+        <li><a href="#overflow" class="sideBarAnchors sideBarAnchorsList-elements">OverFlowing</a></li>
+        <li><a href="#floatingElements" class="sideBarAnchors sideBarAnchorsList-elements">Floating Elements</a></li>
+        <li><a href="#flex" class="sideBarAnchors sideBarAnchorsList-elements">Flex Box</a></li>
+        <li><a id="grid" href="#grid" class="sideBarAnchors sideBarAnchorsList-elements">Grid</a></li>
+    </ul>
+    <a href="#typography" class="sideBarAnchors">Typography</a>
+    <a href="#images" class="sideBarAnchors">Images</a>
+    <a href="#forms" class="sideBarAnchors">Forms</a>
+    <a href="#transformations" class="sideBarAnchors">Transformations</a>
+    <a id="redirect" class="redirect" href="./index.html"><h2>HTML <img class="rotate-right" src="./images/arrow.svg" alt="" srcset=""></h2></a>
+    </div>
+    <div class="contentHolder">
+        <div class="header finisher-header" style="width: 100vw; height: 150px;">
+            <h1 class="header">My HTML and CSS</h1>
+          </div>
+        <div class="content">
+            <h2 id="providingCss" class="headings">Providing CSS</h2>
+            <div class="contentInside">
+                <p>There are three ways to provide CSS to our HTML file.</p>
+            <ol class="list">
+                <li>Internal CSS</li>
+                <li>External CSS</li>
+                <li>In Line CSS</li>
+            </ol>
+            <p><span class="bold">Internal CSS:</span> Styling CSS in the html file itself is called internal css</p>
+            <p><span class="bold">External CSS:</span> Styling CSS in an external file and linking it with HTML file is called External CSS[this is
+                most recomended method]</p>
+            <p><span class="bold">In Line CSS:</span> Styling CSS in the line of an element is called IN Line CSS.</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2 id="normalizingCss" class="headings">Normalizing CSS</h2>
+            <div class="contentInside">
+                <p>It is important to normalize our CSS file,Because different search engines display our styling differently.</p>
+                <a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">Normalize from here</a>
+            </div>
+        </div>
+        <div class="content">
+            <h2 id="selectors" class="headings">Selectors</h2>
+            <div class="contentInside">
+                <p>Selecting elements with their respective
+                <ol class="list">
+                    <li><span class="bold">Type:</span> by the type of body.</li>
+                    <li><span class="bold">ID:</span> by the id we declared.</li>
+                    <li><span class="bold">Class:</span> by the Class we declared.</li>
+                    <li><span class="bold">Attribute:</span> by the Attributes like href , src ,etc..</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <h2 id="specificity" class="headings">Specificity</h2>
+            <div class="contentInside">
+                <p>If we give multiple inputs or styling for only one element,The <b>Specificity</b> come into play</p>
+                <p>If we style an element by its Id and with the class,The style we given for Id gets applied.</p>
+                <br>
+                <div>
+                    <div class="flex-center-justify">
+                        <img class="typicalImage" src="images/selcspef.png" alt="Specificity triangle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="content">
+        <h2 id="colors" class="headings">Colors</h2>
+        <div class="contentInside">
+            <p>There are four ways to use colors in CSS</p>
+                <ol class="list">
+                    <li>RGB</li>
+                    <li>HSL</li>
+                    <li>Named Colors</li>
+                    <li>HexaDecimal</li>
+                </ol>
+            <p>Use <b>rgba</b> tag to set specific color along with opacity of it.</p>
+            <p>for example:</p>
+            <p><b> rgba(red, green, blue, alpha);</b> in this way</p>
+            <p>Here is a way to pick our colors from <a href="https://www.google.com/search?q=color+picker"
+                    target="__blank"><span class="bold">color picker</span ></a> from google.</p>
+        </div>
+    </div>
+    <div class="content">
+        <h2 id="gradient" class="headings">Gradients</h2>
+        <div class="contentInside">
+            <p>We have two types of gradient styles</p>
+            <ol class="list">
+                <li><span class="bold"> Linear Gradient: </span>applies gardient normally from all directions</li>
+                <li><span class="bold"> Radial Gradient: </span>applies gradient in form of shapes from all positions</li>
+            </ol>
+            <p>There is a best way to get <a href="https://cssgradient.io/" target="__blank"><span
+                        class="bold">Gradients</span></a> with the code
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <h2 id="layouts" class="headings">Layouts</h2>
+        <div class="contentInside">
+            <p>Topics to be covered here</p>
+            <ol class="list">
+                    <li>Box Model</li>
+                    <li>Sizing Elements</li>
+                    <li>OverFlowing</li>
+                    <li>Measurement Units</li>
+                    <li>Positioning</li>
+                    <li>Floating Elements</li>
+                    <li>Flex Box and Grid Layouts</li>
+                    <li>Media Queries</li>
+            </ol>
+            <h3 class="headings" id="boxModel">Box Model</h3>
+            <div class="contentInside">
+            <p>Here is the clear structure of a box model in css</p>
+            <br>
+            <div class="flex-center-justify">
+            <img class="typicalImage" src="images/box model.png" alt="box model diagram"><br>
+            </div>
+            <br>
+            <p>Note:never use padding property for spacing,instead use margin</p>
+            <hr><br>
+            </div>
+            <h2 id="sizingElements" class="headings">Sizing Elements</h2>
+            <div class="contentInside">
+                <p>While sizing elements in CSS,If we apply padding, it changes the size of the elements.</p>
+                <p>To get rid of this we use <b>BoxSizing:Border-box;</b></p>
+                <p>Changing inline elements to block level elements and vice versa.Also making both properties apply to an
+                    element</p>
+                <p>here those tags.</p>
+                <p><b>Display:inline;</b></p>
+                <p><b>Display:block;</b></p>
+                <p><b>Display:inline-block;</b></p>
+                <br>
+                <hr>
+                <br>
+                <h2 id="overflow" class="headings">Over Flow</h2>
+                <div class="contentInside">
+                    <p>When the content in an element is OverFlowing use <b>overflow:auto;</b> and hide them under it and access by
+                        scrollling</p>
+                    <p>just like below</p>
+                </div>
+                <div class="flex-center-justify">
+                <div class="overflow">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit maxime hic odio incidunt qui ab quam
+                        eaque dignissimos tempore neque illum, distinctio laudantium doloremque iste iure esse, consequuntur
+                        animi reprehenderit sed, natus voluptatum aspernatur? Quidem commodi saepe ut reprehenderit similique,
+                        ratione dolor quibusdam? Aspernatur ipsam aperiam aut labore obcaecati vel culpa omnis nemo qui quo,
+                        tempore at deleniti nulla neque! Facere autem magnam asperiores est laboriosam corrupti aperiam, id
+                        iure? Iure ratione minus recusandae? Molestiae aut vel impedit! Ratione, dolorem! Voluptate ducimus
+                        voluptatem, impedit officiis non corporis ut? Necessitatibus quibusdam voluptatum et, asperiores,
+                        voluptatibus veritatis vero voluptate eos maxime eius adipisci nobis dignissimos aspernatur temporibus
+                        ipsa natus repellat sint in minus velit hic dolore tenetur quae nisi. Corporis dolorum minima quam,
+                        sequi perferendis accusantium nesciunt. Dolore maiores quos magnam autem voluptatibus repudiandae
+                        delectus quod beatae distinctio illum et repellat exercitationem placeat tempore officiis cupiditate
+                        tenetur sit veritatis voluptatum deserunt, aliquid rem impedit. Cupiditate dolorem, eligendi nemo
+                        consequuntur id consectetur quae sequi dolore, veniam atque repudiandae. Vero quasi iusto velit quo
+                        quaerat maiores dolorem accusantium blanditiis minima sapiente praesentium perspiciatis unde consectetur
+                        ratione atque deleniti sint, quod animi voluptatem amet dolor reiciendis! Cupiditate iure, maiores
+                        blanditiis repudiandae dicta quidem! Neque, deleniti.</p>
+                </div>
+                </div>
+            </div>
+            <br>
+            <hr><br>
+            <h2 id="floatingElements" class="headings">Floating Elements</h2>
+            <div class="contentInside">
+                <p>when we use property called <b>float</b> the element starts floating from its content box,and the content in
+                    it alings automatically next to float.</p>
+                <p>to get the text below the floating element use <b>clear</b></p><br>
+                <hr><br>
+            </div>
+            <h2 id="flex" class="headings">Flex</h2>
+            <div class="contentInside">
+                <p>Display:flex; is used instead of <b>float</b></p>
+                <p><b>flex-direction:row/column/row-reverse/column-reverse</b></p>
+                <br>
+                <div class="flex-center-justify">
+                    <img class="typicalImage" src="images/axesimg.png" alt="image for axes">
+                </div>
+                <br>
+                <p><span class="bold">Justify-content:</span> is for main axis</p>
+                <p><span class="bold">align-item:</span> is for cross axis</p>
+                <p><span class="bold">align-content:</span> is for a group of elements</p>
+                <p><span class="bold">align-self:</span> is for a single element in cross axis</p>
+                <p><span class="bold">justify-self:</span> is for single element in main axis</p>
+                <p><span class="bold">flex-grow:</span> to grow an element according to the space in div</p>
+                <p><span class="bold">flex-shrink:</span> to shrink an element according to the space in div</p>
+                <p>all three properties in one function.<b>flex:grow, shrink, basis;</b></p>
+            </div>
+            <br>
+            <hr>
+            <br>
+    
+            <h2 id="grid" class="headings">Grid</h2>
+            <div class="contentInside">
+                <p>grid-template-rows:no.of rows , size of row;</p>
+            <p>grid-template-column:no.of column , size of column;</p>
+            <br>
+            <p>Here is the shorthand Property for grid which contains both rows and columns</p>
+            <p><b>grid-template:repeat(no.of rows, size) / repeat(no.of columns, size);</b></p>
+            <p>Note: repeat holds no.of rows or columns,size of them;</p>
+            <br>
+            <p><span class="bold">Aligning grid:</span></p>
+            <p>To align elements use the following </p>
+            <p>for items in grid use:</p>
+            <p>
+                <b>
+                    align-items:___;
+                </b>
+            </p>
+            <p>
+                <b>
+                    justify-items:___;
+                </b>
+            </p>
+            <p>for whole grid use</p>
+            <p>
+                <b>
+                    align-content:___;
+                </b>
+            </p>
+            <p>
+                <b>
+                    justify-content:___;
+                </b>
+            </p>
+            <br>
+            <div class="gridexample">
+                <div class=" griditem1">
+                    <p style="margin-top:4.2rem; font-size:large;">Header</p>
+                </div>
+                <div class=" griditem2">
+                    <p style="margin-top:4.2rem; color: white; font-size:large;">Sidebar</p>
+                </div>
+                <div class=" griditem3">
+                    <p style="margin-top:4.2rem; font-size:large;">Content</p>
+                </div>
+                <div class=" griditem4">
+                    <p style="margin-top:4.2rem; color: white; font-size:large;">Footer</p>
+                </div>
+            </div>
+            <br>
+            <p>
+                To give gap between rows use <b> row-gap:value;</b>
+                To give gap between column use <b> column-gap:value;</b>
+            </p>
+            <br>
+            <p>
+                to occupy an element in grid with specified space use <b>grid-row:start/end;</b> for row and
+                <b>grid-column:start/end;</b> for column.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2 id="typography" class="headings">Typography</h2>
+        <div class="contentInside">
+            <span class="bold">vertical spacing</span>
+            <p>line-height:__;</p>
+            <p>horizantal spacing</p>
+            <p>letter-spacing:__;</p>
+            <p>word-spacing:__;</p>
+            <p>width:50ch; allows 50 charecters in a line</p>
+            <span class="bold">Formating text</span>
+            <p>text-align:</p>
+            <p>text-indent:</p>
+            <p>text-decoration:</p>
+            <p>text-transform:</p>
+            <p>text-overflow:__; if text overflows</p>
+            <p>column-count:__; to set column</p>
+            <p>column-gap:__;</p>
+            <p>column-rule:size style color;</p>
+        </div>
+    </div>
+    <div class="content">
+        <h2 id="images" class="headings">Images</h2>
+        <div class="contentInside">
+            <span class="bold">Background Images</span>
+            <p>Background-image:url();</p>
+            <p>Background-repeat:___; to repeat an image or to prevent repeat.</p>
+            <p>Background-postion:___; to posiyion bgimage</p>
+            <p>Background-size:__; to size bgimage.</p>
+            <p>Background-attachment:__; to fix bgimage.</p>
+            <br>
+            <span class="bold">Sprites</span>
+            <p>to get best icons visit <a href="https://www.flaticon.com/">flaticon.com</a>, <a href="https://undraw.co/">Undraw</a></p>
+            <span class="bold">Clipping</span>
+            <p>to clip an image use <a href="https://bennettfeely.com/clippy/">Clip from here.</a></p>
+            <span class="bold">Filters</span>
+            <p>to apply a filter to image use <b>filter:___;</b></p>
+            <p>here are filter properties <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">check out now!</a>
+            </p>
+            <br>
+            <span class="bold">Supporting High Density screens</span>
+            <p><b>srcset:"imagefor1xscreen.jpg 1x, imagefor2xscreen.jpg 2x, imagefor3xscreen.jpg 3x"</b></p>
+            <br>
+            <h2>Font Icons</h2>
+            <p>Best sites to get icons</p>
+            <ul class="list">
+                <li>Font Awesome</li>
+                <li>Ionicons</li>
+                <li>Material Design icons</li>
+                <li>Undraw</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h2 id="forms" class="headings">Forms <a href="./forms.html">Link</a></h2>
+        <div class="contentInside">
+            <span class="bold">Creating forms</span>
+            <p>To create a form use <b>form</b> tag</p>
+            <p>to insert a field <b>input</b> to add label for that field use <b>label</b>tag</p>
+            <p>to give buttons for the form use <b>button</b> tag and specify the type of it <b>reset</b> clears info entered in
+                form</p>
+            <p><b>submit</b> button to submit the form</p>
+            <div class="flex-center-justify">
+                <form class="firstform" action="">
+                    <div class="form-group">
+                        <label for="rollno">Roll no:</label>
+                        <input id="rollno" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div>
+                        <button class="btn" type="submit">Submit</button>
+                        <button class="btn" type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+            <span class="bold">Styling Forms</span>
+            <p>Margin between the field use <b>margin</b> by defining class for <b>both label and input</b></p>
+            <p>to style border use <b>border</b> property</p>
+            <p>use <b>type=["text"]</b> to specify a particular form</p>
+            <p>use <b>type=["text"]:Focus</b> to style elemnt when focused,<b>boxshadow:</b></p>
+            <p><b>Transition: what to change </b></p>
+            <p>to enlarge the field use <b>padding</b></p>
+            <p>to get rid of default border when focus use <b>outline:0;</b></p>
+            <p>Further forms topics to be covered in <a href="forms.html"><button class="btn">Forms</button></a></p>
+            </div>
+    </div>
+    <div class="content">
+        <h2 id="transformations" class="headings">Transformations <a href="./transformations.html">Link</a></h2>
+        <div class="contentInside">
+            <ul class="list">
+                <li>Skew(value in deg)</li>
+                <li>Rotate(value in deg)</li>
+                <li>Scale(value)</li>
+                <li>Translate(X axis value in rem/px,Y axis value in rem/px)</li>
+            </ul>
+                <h2>3D Transformations</h2>
+                <p> transform: perspective(value in px) transformation property();</p>
+                <p><b>Perspective(value in px)</b></p>
+                <p><b>transform-orign( x axis value,Y axis value)</b></p>
+                <br>
+                <h2>Transitions</h2>
+                <p>transition: transform 0.2s , leniar/ease-in/ease-out/cubic-bezier(.04,.98,.67,-0.93) delay in sec;</p>
+                <a href="https://cubic-bezier.com/#0,1.02,.05,-0.87">cubic-bezier</a>
+        </div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+        new FinisherHeader({
+          "count": 6,
+          "size": {
+            "min": 1100,
+            "max": 1300,
+            "pulse": 0
+          },
+          "speed": {
+            "x": {
+              "min": 0.1,
+              "max": 0.3
+            },
+            "y": {
+              "min": 0.1,
+              "max": 0.3
+            }
+          },
+          "colors": {
+            "background": "#eeeeee",
+            "particles": [
+              "#393e46",
+              "#222831",
+              "#00adb5"
+            ]
+          },
+          "blending": "overlay",
+          "opacity": {
+            "center": 1,
+            "edge": 0.1
+          },
+          "skew": 0,
+          "shapes": [
+            "c"
+          ]
+        });
+        </script>
+</body>
+</html>

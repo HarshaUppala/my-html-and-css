@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <title>forms</title>
+</head>
+<style>
+    body{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+    }
+    form{
+        width: 50%;
+        padding: 2rem;
+        margin-left: 33rem;
+    }
+
+    h1{
+        text-align: center;
+        font-weight: 800;
+        color: black;
+    }
+    
+    .buttons{
+        margin-top: 1rem;
+    }
+</style>
+<body>
+    <h1>Fill out this form</h1>
+    <form action="https://formspree.io/f/xzbykepr" method="POST">
+
+        <label for="rollno">Roll.no</label>
+        <input class="rollno" placeholder="Reg.no" maxlength="10" autofocus type="text" name="Roll.no">
+
+        <label for="name">Name</label>
+        <input value="Harsha Uppala" readonly class="name" type="text" name="Name">
+
+        <label for="password">Password</label>
+        <input class="password" minlength="8" type="password" name="Password">
+
+        <label for="DOB">Date Of Birth</label>
+        <input type="date" name="DOB">
+
+        <label for="email">E-mail</label>
+        <input required placeholder="abc@gmail.com" type="Email" name="Email">
+
+        <label for="branch">Branch</label>
+        <input class="branch" list="branchs" type="text" autocomplete="off" name="Branch">
+        <datalist id="branchs">
+            <option>CSE</option>
+            <option>MECH</option>
+            <option>CIVIL</option>
+            <option>ECE</option>
+        </datalist>
+        <label for="section">Section</label>
+        <select id="section">
+            <optgroup label="CSE">
+                <option>CSE-01</option>
+                <option>CSE-02</option>
+                <option>CSE-03</option>
+                <option>CSE-04</option>
+            </optgroup>
+            <optgroup label="MECH">
+                <option>MCH-01</option>
+                <option>MCH-02</option>
+                <option>MCH-03</option>
+                <option>MCH-04</option>
+            </optgroup>
+        </select>
+        <label for="comment">Address</label>
+        <input maxlength="6" minlength="6" placeholder="Pincode" type="text" name="Pincode">
+        <textarea placeholder="Address" required class="comment" cols="30" rows="30" name="Address"></textarea>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+        </div>
+        <div>
+            <input type="radio" name="onlyone" id="radio1" name="radio-1">
+            <label for="radio1" class="label-inline">first radio</label>
+        </div>
+        <div>
+            <input type="radio" name="onlyone" id="radio2" name="radio-2" >
+            <label for="radio2" class="label-inline">second radio</label>
+        </div>
+        <div>
+            <input type="range" minlength="0" maxlength="100" value="20" name="Slider">
+        </div>
+        <div>
+            <input type="file" multiple accept="video/*" name="userfile">
+        </div>
+    </form>
+</body>
+</html>

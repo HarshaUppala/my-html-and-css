@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./utils.css">
+    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+    <title>Harsha Uppala</title>
+</head>
+<body">
+    <div class="sideBar">
+    <h2>HTML</h2>
+    <a class="sideBarAnchors" href="#photos">Photos</a>
+    <a class="sideBarAnchors"  href="#txt">Text</a>
+    <a class="sideBarAnchors"  href="#head">Headings</a>
+    <a class="sideBarAnchors"  href="#hyperLinks">Hyperlinks</a>
+    <a class="sideBarAnchors"  href="#videoAudio">Videos/Audio</a>
+    <a class="sideBarAnchors"  href="#lists">Lists</a>
+    <a class="sideBarAnchors"  href="#tables">Tables</a>
+    <a class="sideBarAnchors"  href="#containers">Containers</a>
+    <a class="sideBarAnchors"  href="#semanticElements">Semantic Elements</a>
+    <a id="redirect" class="redirect" href="./css.html"><h2 class="redirectH2">CSS <img class="rotate-right" src="./images/arrow.svg" alt="" srcset=""></h2></a>
+    </div>
+    <div class="contentHolder">
+        <div class="header finisher-header" style="width: 100vw; height: 150px;">
+            <h1 class="header">My HTML and CSS</h1>
+          </div>
+        <div class="content">
+            <h2 id="photos" class="headings">Photos</h2>
+            <div class="contentInside">
+                <p>
+                    WE can add Photos to our website via local folder images or through links
+                    of external websites.
+                </p>
+                <h3>Adding Photos</h3>
+                <p>
+                    We can add photos to our website by creating a folder with an image inside
+                    of it and then call it by a command "img", in "src" section define an
+                    image, for example <b>src="images/photo.jpg"</b>
+                </p>
+                <p>Key command to fit image <b>object-fit:cover;</b></p>
+                <img class="typicalImage-fit" src="https://source.unsplash.com/random/200×200" alt="ntr photo">
+                <br>
+                <h3>Editing photos</h3>
+                <p>
+                    It is like resizeing and alingning the photos in favour of us,Key
+                    Commands:width, border-radius etc..
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <h2 id="txt" class="headings">Text</h2>
+            <div class="contentInside">
+                <h3>Adding Text</h3>
+               <p>Use these command to add a text <b> &lt;p&gt;add your text&lt;p&sol;&gt;</b></p> 
+               <br>
+                <h3>Editing Text</h3>
+                <ul class="list">
+                    <li>color</li>
+                    <li>float</li>
+                    <li>margin</li>
+                    <li>font-size</li>
+                    <li>font weight</li>
+                    <li>font style</li>
+                    <li>-webkit-text-stroke: 2px</li>
+                    <li>-webkit-text-stroke-color:yellow</li>
+                </ul>
+                <br>
+                <p>
+                    <title>Horizantal line</title> To display horzintal line use &lt;hr&gt; only opening tag
+                </p>
+                <hr>
+                <p>to break a line go to next line use <b> &lt;br&gt;</b></p>
+                <p>To reserve spaces use <b> &lt;pre&gt; </b>tag as show below</p>
+                <pre>HI    How  are        you..     .    ...... </pre>
+                <p> <b> font-family </b> to use different fonts to our text.</p>
+                <p><b>text-aling: </b> to make text position.</p>
+                <br>
+                <h3>Key Functions</h3>
+                <p>Here are some functions to be covered under text and they are:</p>
+                <p>
+                    Entity:If you use the less than (<) or greater than (>) signs in your
+                        text, the browser might mix them with tags.Below for entity code.
+                </p>
+                <a href="https://dev.w3.org/html5/html-author/charref" target="_blank">Entity code</a>
+                <p>
+                    Emphasis: The HTML "em" tag marks text that has stress emphasis which
+                    traditionally means that the text is displayed in italics by the browser.
+                    This tag is also commonly referred to as the element.
+                </p>
+                <p>Marquee is a tag that moves text just like below</p>
+                <marquee class="marqueee" behavior="" direction="right">This is marquee</marquee>
+                <p>
+                    Non Breakable Space: it is used to prevent the breakage of words while
+                    displaying text on a site.Command is <b>"&ampnbsp;"</b>
+                </p>
+                <p>Meta: It is used to add keywords to a website and add description which is displayed bt browser</p>
+                <p>command is <b>&ltmeta name="description" content="Free Web tutorials"></b></p>
+                <p><b>
+                        &ltmeta name="keywords" content="HTML, CSS, JavaScript"></b></p><br>
+                <h3>Text Indent</h3>
+                <p>To start a para leaving some space use <b>"text-indent"</b></p>
+                <p class="text-indent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquam provident possimus
+                    pariatur? Mollitia, alias officiis! Placeat aperiam molestias recusandae aliquam nulla fugit, neque nesciunt
+                    reprehenderit eligendi esse accusantium nam.</p>
+            </div>
+            </div>
+            <div class="content">
+                <h2 id="head" class="headings">Headings</h2>
+                <div class="contentInside">
+                    <p>
+                        Headings are usefull to design a website more easier for a Search Engine
+                        to understand.The heading elements are H1, H2, H3, H4, H5, and H6 with H1
+                        being the highest (or most important) level and H6 the least.
+                    </p>
+                    <p>written as follows....</p>
+                    <p>&lt;h1&gt;add your text&lt;h1&sol;&gt;</p>
+                    <p>&lt;h2&gt;add your text&lt;h2&sol;&gt;</p>
+                    <p>&lt;h3&gt;add your text&lt;h3&sol;&gt;</p>
+                    <p>&lt;h4&gt;add your text&lt;h4&sol;&gt;</p>
+                    <p>&lt;h5&gt;add your text&lt;h5&sol;&gt;</p>
+                    <p>&lt;h6&gt;add your text&lt;h6&sol;&gt;</p>
+                </div>
+                </div>
+
+            <div class="content">
+                <h2 id="hyperLinks" class="headings">Hyperlinks</h2>
+                <div class="contentInside">
+                    <p>
+                        The basic stucture of a hyper link is
+                        <b>&lt;a href=""&gt;&lt;p&sol;&gt</b>
+                      </p>
+                      <p>Here are the different ways to use it.</p>
+                      <h3>Access other page</h3>
+                      <p>
+                        Accessing other pages of our site can be done using
+                        <b>&lt;a href="/otherpagename.html"&gt;Other page&lt;p&sol;&gt</b>
+                      </p>
+                      <a href="otherpage.html">Other Page</a>
+                      <br>
+                      <br>
+                      <h3>Direct download</h3>
+                      <p>One can Directly download something by clicking on a clickable text</p>
+                      <p>
+                        This can be done using
+                        <b>
+                          &lt;a href="File path here/link of File" download&gt;download from
+                          Here&lt;p&sol;&gt</b
+                        >
+                      </p>
+                      <p>as below</p>
+                      <a href="images/ntr.jpg" download>Download</a>
+                      <br>
+                      <br>
+                      <h3>Jump to a section</h3>
+                      <p>
+                        Basically the name it self defines the function of it.Jump to a particular
+                        place by clicking on a clickable text.
+                      </p>
+                      <p>Here it goes, First create a <b>"id"</b> for a element.</p>
+                      <p>
+                        Now use this Command to jump
+                        <b>&lt;a href="#id-name"&gt;jump&lt;a&sol;&gt</b>
+                      </p>
+                      <p>as below</p>
+                      <a href="#txt">Jump to Text</a>
+                      <br>
+                      <br>
+                      <h3>Jump to Top</h3>
+                      <p>
+                        Same as like above function jump to top also works but no need to create
+                        an "id"
+                      </p>
+                      <p>Use this command <b>&lt;a href="#"&gt;Jump to Top&lt;a&sol;&gt</b></p>
+                      <p>as below</p>
+                      <a href="#">Jump to Top</a>
+                      <br>
+                      <br>
+                      <h3>Direct Mail</h3>
+                      <p>
+                        It is a link that allows user to write a mail directly to a specified
+                        person
+                      </p>
+                      <p>
+                        The Command is
+                        <b>&lt;a href="mailto:specifiedmail"&gt;Direct mail&lt;a&sol;&gt</b>
+                      </p>
+                      <p>as shown below</p>
+                      <a href="mailto:uhkuppala999@gmail.com">Direct Mail</a>
+                      <br>
+                      <br>
+                      <h3>Other site in New Tab</h3>
+                      <p>Open the other websites on a new tab unlike opening in our tab</p>
+                      <p>
+                        Command is
+                        <b
+                          >&lt;a href="Website link" target="_blank"&gt;Display
+                          #id-name&lt;a&sol;&gt</b
+                        >
+                      </p>
+                      <p>as below</p>
+                      <a href="https://google.com" target="_blank">Google</a>
+                </div>
+            </div>
+            <div class="content">
+                <h2 id="videoAudio" class="headings">Video and Audio</h2>
+                <div class="contentInside">
+                    <h3>Video</h3>
+                    <p>Command to add videos to our website is <b>&lt;video
+                            src="videos/videoname.mp4">description&lt;video&sol;&gt</b>
+                    </p>
+                    <p>Key commands:</p>
+                    <ul class="list">
+                        <li>autoplay</li>
+                        <li>controls</li>
+                        <li>loop</li>
+                    </ul>
+                    <p>just as shown below</p>
+                    <video controls width="250" height="150" src="videos/asvr.mp4">Your browser does not support videos.</video><br><br>
+                    <p>We can place Youtube videos by copy&paste of embeed code.</p>
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/EE9FgJX9A5c" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <br>
+                    <br>
+                    <h3>Audio</h3>
+                    <p>Same as like Videos, command is<b>&lt;Audio src="audio/audioname.mp3">description&lt;audio&sol;&gt</b> </p>
+                    <p>Key commands:</p>
+                    <ul class="list">
+                        <li>autoplay</li>
+                        <li>controls</li>
+                        <li>loop</li>
+                    </ul>
+                    <p>just as shown below</p>
+                    <audio controls audio.volume=0.5 src="audio/In The End(PagalWorld).mp3">IN THE END song</audio>
+                </div>
+                </div>
+            <div class="content">
+                <h2 id="lists" class="headings">Lists</h2>
+                    <div class="contentInside">
+                        <h3>Unorder Lists</h3>
+                        <p>this goes as follows</p>
+                        <p>&lt;ul></p>
+                        <ul class="list listOrginal">
+                            <li>&lt;li&gt;add your text&lt;li&sol;&gt;</li>
+                            <li>&lt;li&gt;add your text&lt;li&sol;&gt;</li>
+                            <li>&lt;li&gt;add your text&lt;li&sol;&gt;</li>
+                        </ul>
+                        <p>&lt;ul&sol;&gt;</p>
+                        <p><em>Default Output:</em></p>
+                        <ul class="list">
+                            <li>add your text</li>
+                            <li>add your text</li>
+                            <li>add your text</li>
+                        </ul>
+                        <br>
+                        <h3>Order Lists</h3>
+                        <p>this goes as follows </p>
+                        <p>&lt;ol></p>
+                        <ul class="listOrder listOrginal">
+                            <li>&lt;li&gt;add your text&lt;li&sol;&gt;</li>
+                            <li>&lt;li&gt;add your text&lt;li&sol;&gt;</li>
+                            <li>&lt;li&gt;add your text&lt;li&sol;&gt;</li>
+                        </ul>
+                        <p>&lt;ol&sol;&gt;</p>
+                        <p><em>Defualt Output:</em></p>
+                        <ol class="listOrder">
+                            <li>add your text</li>
+                            <li>add your text</li>
+                            <li>add your text</li>
+                        </ol>
+                        <br>
+                        <h3>Description Lists</h3>
+                        <p>this goes as follows..</p>
+                        <p>&lt;dl></p>
+                        <ul class="list listOrginal">
+                            <li>&lt;dt&gt;group 1 &lt;dd&gt;group 1 has 3 boys&lt;&sol;dd&gt; &lt;dd&gt;group 1 has 2 girls&lt;&sol;dd&gt;
+                                &lt;&sol;dt&gt;</li>
+                            <li>&lt;dt&gt;group 2 &lt;dd&gt;group 2 has 13 boys&lt;&sol;dd&gt; &lt;dd&gt;group 2 has 7 girls&lt;&sol;dd;&gt;
+                                &lt;&sol;dt&gt;</li>
+                            <li>&lt;dt&gt;group 3 &lt;dd&gt;group 3 has 3 boys only &lt;&sol;dd&gt; &lt;&sol;dt&gt;</li>
+                        </ul>
+                        <p>&lt;&sol;dl&gt;</p>
+                        <p><em>Output:</em></p>
+                        <dl class="list">
+                            <dt>group 1
+                            <dd>group 1 has 3 boys</dd>
+                            <dd>group 1 has 2 girls</dd>
+                            </dt>
+                            <dt>group 2
+                            <dd>group 2 has 13 boys</dd>
+                            <dd>group 2 has 7 girls</dd>
+                            </dt>
+                            <dt>group 3
+                            <dd>group 3 has 3 boys only </dd>
+                            </dt>
+                        </dl>
+                    </div>
+            </div>
+            <div class="content">
+                <h2 id="tables" class="headings">Tables</h2>
+                <div class="contentInside">
+                        <p> first type table -> tr -> td</p>
+                        <p>tr -> is a row in table </p>
+                        <p>td -> is a element in a row</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    BGMI STATS
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>K/D ratio</th>
+                            <th>Royal Pass</th>
+                        </tr>
+            
+                        <tr>
+                            <td>CYTO</td>
+                            <td>3.5</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <td>UHK</td>
+                            <td>3.4</td>
+                            <td>68</td>
+                        </tr>
+                        <tr>
+                            <td>Katree</td>
+                            <td>3.7</td>
+                            <td>100</td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <th colspan="3">Katree Tops in All Sections
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="content">
+                <h2 id="containers" class="headings">Containers</h2>
+                <div class="contentInside">
+                    <p>These hold contents in it </p>
+                    <p>1.div is a container which containes blocklevel elements which takes whole width or specified width </p>
+                    <div class="block">Takes all the block
+                    </div>
+                    <p>2.span is a container which contains specified element</p>
+                    <div>
+                      can take a <span class="block">specified</span> one.
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h2 id="semanticElements" class="headings">Semantic Elements</h2>
+                <div class="contentInside">
+                    <p>Here some elements to be used while coding,these enables search engines to understand better about our website
+                    </p>
+                    <p>They are </p>
+                    <p>Article - an Independent self contained content.In simple,to hold a group of content</p>
+                    <p>Mark - to highlight some thing</p>
+                    <p>Date time - use "time" while displaying time or date,this helps search engine to understand better </p>
+                    <p>Figure - to use while using figure/images</p>
+                    <p>Figcaption - to give caption for an image.Just like below </p>
+                    <figure>
+                        <img class="typicalImage-fit" src="https://source.unsplash.com/random/200×200" alt="">
+                        <figcaption>A Random Photo</figcaption>
+                    </figure>
+                    <br
+                    <div class="elem">
+                        <img class="typicalImage-fit" src="images/elem.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+        <script type="text/javascript">
+            new FinisherHeader({
+              "count": 6,
+              "size": {
+                "min": 1100,
+                "max": 1300,
+                "pulse": 0
+              },
+              "speed": {
+                "x": {
+                  "min": 0.5,
+                  "max": 0.5
+                },
+                "y": {
+                  "min": 0.5,
+                  "max": 0.3
+                }
+              },
+              "colors": {
+                "background": "#393e46",
+                "particles": [
+                  "#222831",
+                  "#eeeeee",
+                  "#00adb5"
+                ]
+              },
+              "blending": "overlay",
+              "opacity": {
+                "center": 1,
+                "edge": 0.1
+              },
+              "skew": 0,
+              "shapes": [
+                "c"
+              ]
+            });
+            </script>
+</body>
+</html>

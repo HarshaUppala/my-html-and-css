@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+p,h1,h2,h3,a{
+    color:rgb(238, 238, 238);
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top: 6rem;
+    background-color: rgb(34, 40, 49);
+    overflow-x: hidden;
+}
+
+b{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:rgb(34, 40, 49);
+    background-color:rgb(0, 173, 181) ;
+}
+
+.header{
+    font-size: 4rem;
+}
+
+.sideBar{
+    width: 22rem;
+    height: 100%;
+    overflow-x: hidden;
+    position:fixed;
+    background-color: rgb(0, 173, 181);
+    color: rgb(34, 40, 49);
+}
+
+.sideBar h2{
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: rgb(34, 40, 49);
+}
+
+h3{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+}
+
+.sideBarAnchors{
+    display: block;
+    width: 18rem;
+    font-size: 1.7rem;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.397);
+}
+
+
+.sideBarAnchors:hover{
+    color:rgb(238, 238, 238);
+    background-color: rgb(34, 40, 49);
+}
+
+
+.sideBarAnchorsList{
+    border: 0;
+    margin-bottom: 0;
+    font-size: 2.6rem;
+}
+
+.sideBarAnchorsList-elements{
+    width:15rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 0;
+    margin-top: 0;
+}
+
+.list-prop{
+    display:none;
+}
+
+.icon{
+    width: 1.7rem;
+    margin-left: 1rem;
+}
+
+.sideBarAnchors-list-holder{
+    border-bottom: 1px solid rgba(161, 161, 161, 0.397);
+}
+
+.contentHolder{
+    margin-left: 30rem;
+    padding-top: 4rem;
+}
+
+.content{
+    width: 70vw;
+    height: auto;
+    background-color: rgb(57, 62, 70);
+    margin-top: 2rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.headings{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.contentInside{
+    margin-left: 3rem;
+    font-size: 2.8rem;
+    padding-right: 3rem;
+}
+
+
+.list{
+    list-style:disc;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    padding-bottom: 2rem;
+    color:rgb(238, 238, 238);
+}
+
+
+.listOrder{
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    color:rgb(238, 238, 238);
+}
+
+.listOrginal{
+    list-style: none;
+}
+
+table,
+td,
+th {
+  border: 0.1rem solid rgb(238, 238, 238);;
+  border-collapse: collapse;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  color:rgb(238, 238, 238);
+}
+
+.block{
+    background-color:rgb(172, 169, 169);
+}
+
+.overflow{
+    border: 0.2rem solid rgb(80, 80, 80);
+    border-radius: 0.5rem;
+    width: 60rem;
+    height: 10rem;
+    background-color: rgb(187, 187, 187);
+    color: white;
+    overflow: auto;
+    font-size: 2.2rem;
+  }
+
+/* For grid  */
+
+.gridexample{
+    display: grid;
+    grid-template: repeat(3,10rem) / repeat(3,10rem);
+    align-items: center;
+    justify-items:center;
+    justify-content: center;
+    align-content: center;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    grid-template-areas: 
+     "header header header"
+     "sidebar contentt contentt"
+     "footer footer footer";
+     align-items: stretch;
+     justify-items:stretch;
+  }
+ 
+ .griditem1{
+ grid-area: header;
+ background-color: #cdf04e;
+ border-radius: 1rem;
+ text-align: center;
+ 
+ }
+ 
+ .griditem2{
+   grid-area: sidebar;
+   background-color: #414948;
+   border-radius: 1rem;
+   text-align: center;
+ }
+ 
+ .griditem3{
+   grid-area: contentt;
+   background-color: #f3bcd1;
+   border-radius: 1rem;
+   text-align: center;
+ }
+ 
+ .griditem4{
+   grid-area: footer;
+   background-color: #3d4140;
+   border-radius: 1rem;
+   text-align: center;
+ }
+
+.firstform input{
+    width: 16rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.firstform label{
+    font-size: 1.4rem;
+}
+
+.btn{
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}

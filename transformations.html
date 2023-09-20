@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Transformations</title>
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-color: rgb(34, 40, 49);
+        overflow-x: hidden;
+    }
+
+    h1{
+        color: rgb(0, 173, 181);
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+     .container{
+        width: 90rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(34, 40, 49);
+    }
+    .content{
+        width:8rem ;
+        height:8rem ;
+        background-color: rgb(57, 62, 70);
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        color: white;
+    }
+    .content{
+        transition: transform 0.2s ;  
+    }
+    .transition{
+        transition:transform 0.2s  ease-in-out , background 0.7s ; 
+    }
+    .skew:hover{
+    transform: skew(15deg)
+    }
+    .rotate:hover{
+        transform: rotate(15deg);
+    }
+    .scale:hover{
+        transform: scale(1.5);
+        transition: transform 0.5s;
+    }
+    .translate:hover{
+        transform: translate(20px,14px);
+    }
+    .tdtransform:hover{
+        transform: perspective(200px) rotateY(20deg);
+        transform-origin: 0 50%;
+    }
+    .transition:hover{
+        transform: scale(1.5);
+        background-color: grey;
+    }
+
+    .customanimation:hover{
+        animation: ani 2s ease-in 1s ;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: small;
+    }
+
+    @keyframes ani {
+        0% {
+            transform: rotate(20deg);
+        }
+
+        25%{
+            transform: scale(2);
+        }
+
+        50%{
+            transform: scale(1);
+        }
+
+        75%{
+            transform: skew(15deg);
+        }
+
+        100%{
+            transform: translate(20px,14px) ;
+            background-color: grey;
+        }
+    }
+</style>
+<body>
+    <h1>Transformations</h1>
+<div class="container">
+    <div class="content skew">
+      <p>Skew</p>
+    </div>
+    <div class="content rotate">
+      <p>Rotate</p> 
+    </div>
+    <div class="content scale">
+      <p>Scale</p>
+    </div>
+    <div class="content translate">
+      <p>Translate</p>  
+    </div>
+    <div class="content tdtransform">
+        <p>3d Transform</p>
+    </div>
+    <div class=" content transition">
+        <p>Transition</p>
+    </div>
+    <div class="content customanimation">
+        <p>Custom Animation</p>
+    </div>
+</div>
+</body>
+</html>
